@@ -1,0 +1,34 @@
+.Conteiner{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;   
+ justify-content: space-between;
+}
+article{
+ width: 22%;
+ height: auto;
+ background-color: aqua;
+ border: 1px solid blue;
+ border-radius: 3%;
+text-align: center;
+cursor: pointer;
+}
+button{
+background-color: rgb(135, 235, 135);    
+cursor: pointer;
+padding: 1em;
+border-radius: 6%;
+width: 100px;
+height: auto;
+
+}
+#grupo{
+padding: 2em;
+margin: 2em;
+}
+#btn{
+    color: aliceblue;
+}
+input{
+  width: 99%;  
+}

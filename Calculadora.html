@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+<section id="grupo">
+<form action="">
+<label for="numero">Numero</label><br>
+<input type="number" id="numero" name="numero" placeholder="Ingrese un numero" >
+</form>
+<section class="Conteiner">
+<article id="sumacion">Suma</article> 
+<article id="restacion">resta</article>
+<article id="multi">Multiplicación</article>
+<article id="divi">División</article>   
+</section>
+<button id="btn">Igual</button>
+</section>
+    
+    <script>
+/*Hacer una calculadora que tenga las cuatro operaciones básicas (suma, resta, multiplicación y división), un botón "igual" y un input text donde el usuario pueda ingresar los números.
+El comportamiento deberá ser lo más real posible, es decir:
+
+El usuario ingresa un número.
+
+El usuario aprieta una operación (por ejemplo suma).
+
+El input se vacía automáticamente para que el usuario pueda ingresar otro número.
+
+El usuario ingresa el segundo número.
+
+El usuario aprieta "igual" y en el input text se visualiza el resultado de la operación.*/
+ 
+
+
+document.getElementById("sumacion").onclick=function(){
+var numero1 = parseInt(document.getElementById("numero").value);
+console.log(numero1);
+document.getElementById("numero").value="";
+
+
+
+document.getElementById("btn").onclick=function(){
+var numero2 = parseInt(document.getElementById("numero").value);
+console.log(numero2);  
+parseInt(document.getElementById("numero").value = (numero1 + numero2));  
+}
+}
+
+
+document.getElementById("restacion").onclick=function(){
+var numero1 = parseInt(document.getElementById("numero").value);
+console.log(numero1);
+document.getElementById("numero").value="";
+
+
+
+document.getElementById("btn").onclick=function(){
+var numero2 = parseInt(document.getElementById("numero").value);
+console.log(numero2);  
+parseInt(document.getElementById("numero").value = (numero1 - numero2));  
+}
+}
+
+document.getElementById("multi").onclick=function(){
+var numero1 = parseInt(document.getElementById("numero").value);
+console.log(numero1);
+document.getElementById("numero").value="";
+
+
+
+document.getElementById("btn").onclick=function(){
+var numero2 = parseInt(document.getElementById("numero").value);
+console.log(numero2);  
+parseInt(document.getElementById("numero").value = (numero1 * numero2));  
+}
+}
+
+document.getElementById("divi").onclick=function(){
+var numero1 = parseInt(document.getElementById("numero").value);
+console.log(numero1);
+document.getElementById("numero").value="";
+
+
+
+document.getElementById("btn").onclick=function(){
+var numero2 = parseInt(document.getElementById("numero").value);
+console.log(numero2);  
+parseInt(document.getElementById("numero").value = (numero1/numero2));  
+}
+}
+   </script>
+    
+</body>
+</html>
